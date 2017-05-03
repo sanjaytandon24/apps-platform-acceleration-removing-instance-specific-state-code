@@ -19,7 +19,7 @@ public class RedisConfiguration {
     RedisConnectionFactory redisConnectionFactory() {
         return new JedisConnectionFactory();
     }
-
+ 
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
